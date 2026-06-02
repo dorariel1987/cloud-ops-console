@@ -7,6 +7,24 @@ across AWS, Azure and GCP** — replacing five separate dashboards with one sour
 ![next](https://img.shields.io/badge/next.js-15-black)
 ![ts](https://img.shields.io/badge/typescript-5-blue)
 
+## Screenshots
+
+### Overview — unified state across all three clouds
+
+![Overview dashboard](docs/screenshots/overview.png)
+
+### Cost — spend, forecast, budget burn and anomaly detection
+
+![Cost dashboard](docs/screenshots/cost.png)
+
+### Deployments — DORA metrics and service × environment matrix
+
+![Deployments dashboard](docs/screenshots/deployments.png)
+
+### On-Call & Incidents — active alerts, severity, rotation schedule
+
+![On-Call dashboard](docs/screenshots/oncall.png)
+
 ## What it gives you
 
 - **Overview** — single glance at spend, deploys and incidents across all three clouds.
