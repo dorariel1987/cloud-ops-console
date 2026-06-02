@@ -60,7 +60,11 @@ export function CostTrendChart({ data, showProviders }: CostTrendChartProps) {
             border: "1px solid hsl(var(--border))",
             borderRadius: 8,
             fontSize: 12,
+            color: "hsl(var(--popover-foreground))",
+            boxShadow: "0 4px 14px hsl(0 0% 0% / 0.18)",
           }}
+          itemStyle={{ color: "hsl(var(--popover-foreground))" }}
+          labelStyle={{ color: "hsl(var(--muted-foreground))", marginBottom: 4 }}
           labelFormatter={(d) => format(parseISO(d as string), "MMM d, yyyy")}
           formatter={(v: number, name: string) => [formatCurrency(v), name.toUpperCase()]}
         />

@@ -41,7 +41,11 @@ export function DeploymentsByDayChart({ data }: DeploymentsByDayChartProps) {
             border: "1px solid hsl(var(--border))",
             borderRadius: 8,
             fontSize: 12,
+            color: "hsl(var(--popover-foreground))",
+            boxShadow: "0 4px 14px hsl(0 0% 0% / 0.18)",
           }}
+          itemStyle={{ color: "hsl(var(--popover-foreground))" }}
+          labelStyle={{ color: "hsl(var(--muted-foreground))", marginBottom: 4 }}
         />
         <Bar dataKey="succeeded" stackId="a" fill="hsl(var(--success))" radius={[0, 0, 0, 0]} />
         <Bar dataKey="failed" stackId="a" fill="hsl(var(--destructive))" radius={[3, 3, 0, 0]} />

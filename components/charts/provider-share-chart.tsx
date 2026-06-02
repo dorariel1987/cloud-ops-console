@@ -35,12 +35,17 @@ export function ProviderShareChart({ data }: ProviderShareChartProps) {
             ))}
           </Pie>
           <Tooltip
+            cursor={{ fill: "hsl(var(--muted) / 0.4)" }}
             contentStyle={{
               background: "hsl(var(--popover))",
               border: "1px solid hsl(var(--border))",
               borderRadius: 8,
               fontSize: 12,
+              color: "hsl(var(--popover-foreground))",
+              boxShadow: "0 4px 14px hsl(0 0% 0% / 0.18)",
             }}
+            itemStyle={{ color: "hsl(var(--popover-foreground))" }}
+            labelStyle={{ color: "hsl(var(--muted-foreground))" }}
             formatter={(v: number, name: string) => [
               formatCurrency(v),
               PROVIDER_META[name as ProviderId]?.shortName ?? name,
